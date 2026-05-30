@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Common Knowledge</title>
+  <script data-goatcounter="https://steffenhuck.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #f8f8f6;
+      --text: #141414;
+      --muted: #141414;
+      --max-width: 700px;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: 'Nunito', sans-serif;
+      font-size: 22px;
+      line-height: 2;
+    }
+
+    .container {
+      max-width: var(--max-width);
+      margin: 0 auto;
+      padding: 64px 32px 96px;
+    }
+
+    /* --- TITLE BLOCK --- */
+    .header {
+      text-align: center;
+      margin-bottom: 56px;
+    }
+
+    h1 {
+      font-family: 'Nunito', sans-serif;
+      font-size: clamp(3rem, 7vw, 5.5rem);
+      font-weight: 700;
+      letter-spacing: 0.02em;
+      color: var(--text);
+      line-height: 1.05;
+      margin-bottom: 0.5rem;
+    }
+
+    .subtitle {
+      font-size: 1.3rem;
+      font-weight: 400;
+      color: var(--text);
+      opacity: 0.45;
+      letter-spacing: 0.04em;
+      margin-bottom: 1rem;
+    }
+
+    .cast-block {
+      font-size: 1rem;
+      color: var(--text);
+      opacity: 0.55;
+      line-height: 1.7;
+    }
+
+    .cast-label {
+      font-weight: 700;
+      font-size: 0.75rem;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      margin-bottom: 0.3rem;
+      opacity: 1;
+    }
+
+    /* --- IMAGE --- */
+    .visual {
+      display: block;
+      width: 100%;
+      max-width: 460px;
+      margin: 0 auto 3.5rem auto;
+    }
+
+    /* --- PLAY TEXT --- */
+    .stage {
+      font-style: italic;
+      font-weight: 400;
+      color: var(--text);
+      opacity: 0.42;
+      font-size: 1em;
+      margin: 0 0 1.2rem;
+      line-height: 1.7;
+      padding-left: 1.5em;
+    }
+
+    .speech {
+      margin: 1.4rem 0;
+    }
+
+    .speaker {
+      font-size: 1rem;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      color: var(--text);
+      margin-bottom: 0.1rem;
+    }
+
+    .line {
+      font-size: 1em;
+      font-weight: 400;
+      color: var(--text);
+      line-height: 2;
+      margin: 0;
+      padding-left: 1.5em;
+    }
+
+    .inline-stage {
+      display: block;
+      font-style: italic;
+      font-weight: 400;
+      color: var(--text);
+      opacity: 0.42;
+      font-size: 1em;
+      margin: 0.1rem 0 0.2rem;
+      line-height: 1.7;
+    }
+
+    /* --- FOOTER --- */
+    footer {
+      margin-top: 5rem;
+      text-align: center;
+    }
+
+    footer a {
+      font-family: 'Nunito', sans-serif;
+      font-size: 0.9rem;
+      letter-spacing: 0.2em;
+      text-transform: lowercase;
+      color: var(--text);
+      text-decoration: none;
+      opacity: 0.35;
+      transition: opacity 0.2s;
+    }
+
+    footer a:hover { opacity: 0.8; }
+
+    @media (max-width: 600px) {
+      body { font-size: 19px; }
+      .container { padding: 40px 20px 64px; }
+      h1 { font-size: 2.6rem; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+
+    <div class="header">
+      <h1>Common Knowledge</h1>
+      <p class="subtitle">A Play</p>
+      <div class="cast-block">
+        <div class="cast-label">Cast</div>
+        <div>The Swedish Professor · The Instructor · The First Student</div>
+        <div>The New Student · The Young Student · The Other Students</div>
+      </div>
+    </div>
+
+    <img class="visual" src="ck.png" alt="Two figures thinking about each other thinking">
+
+    <p class="stage">(The institute's lecture room with the window to the lake. The Swedish Professor is in the middle of his lecture next to a whiteboard. All others sit.)</p>
+
+    <div class="speech">
+      <div class="speaker">The Swedish Professor</div>
+      <p class="line">The point is, when it comes to trust, it is simply not sufficient to think about whether the trustor, the person — the player, who has to decide about whether or not to trust another, believes that the trustee will reward the trust — that the other will return the favour. That is trivial and any model that stops at this stage misses the social mechanics of trust.</p>
+    </div>
+
+    <div class="speech">
+      <div class="speaker">The New Student</div>
+      <p class="line">Can you explain this again — like for an eight-year-old?</p>
+    </div>
+
+    <div class="speech">
+      <div class="speaker">The Swedish Professor</div>
+      <p class="line">Ok, let me address your inner child.</p>
+    </div>
+
+    <p class="stage">(A beat.)</p>
+
+    <div class="speech">
+      <div class="speaker">The Swedish Professor</div>
+      <p class="line">Imagine I lend you my toy and I think you will give it back. That sounds like trust, doesn't it. But it's only half of it. The other half is that you know that I trust you. And once you know that you may feel ashamed keeping the toy. You want to live up to my trust — to my lending you the toy.</p>
+    </div>
+
+    <div class="speech">
+      <div class="speaker">The Young Student</div>
+      <p class="line">A toy example.</p>
+    </div>
+
+    <div class="speech">
+      <div class="speaker">The Other Students</div>
+      <p class="line">A toy.</p>
+    </div>
+
+    <div class="speech">
+      <div class="speaker">The Swedish Professor</div>
+      <p class="line">Yes, a toy example with a toy.</p>
+    </div>
+
+    <div class="speech">
+      <div class="speaker">The Instructor</div>
+      <p class="line">Why don't you explain to them how this relates to our core curriculum.</p>
+    </div>
+
+    <div class="speech">
+      <div class="speaker">The Swedish Professor</div>
+      <p class="line">For a good dictator it does not merely matter whether a specific individual believes in his goodness and will comply. It matters to him whether he believes that another believes that someone will comply.</p>
+    </div>
+
+    <div class="speech">
+      <div class="speaker">The Young Student</div>
+      <p class="line">You are now invoking a three-person game. Maybe you should have given us a different, um, toy example.</p>
+    </div>
+
+    <div class="speech">
+      <div class="speaker">The Swedish Professor</div>
+      <p class="line">I would have moved on to one. But you do get the idea?</p>
+    </div>
+
+    <div class="speech">
+      <div class="speaker">The Young Student</div>
+      <p class="line">I believe that he believes…</p>
+    </div>
+
+    <div class="speech">
+      <div class="speaker">The Swedish Professor</div>
+      <p class="line">Exactly.</p>
+    </div>
+
+    <div class="speech">
+      <div class="speaker">The Young Student</div>
+      <p class="line">But isn't it even more important for us whether someone believes that other others believe that everyone believes that —</p>
+    </div>
+
+    <div class="speech">
+      <div class="speaker">The Swedish Professor</div>
+      <span class="inline-stage">(interrupting, visibly excited)</span>
+      <p class="line">Yes. Yes. You are running ahead of me. And you are right. The third order is more important than the second. And the fourth more important than the third. And so on.</p>
+    </div>
+
+    <p class="stage">(A beat.)</p>
+
+    <div class="speech">
+      <div class="speaker">The Swedish Professor</div>
+      <p class="line">And when you go all the way — when you go to infinity — you arrive at something we call common knowledge. Everyone knows. Everyone knows that everyone knows. Everyone knows that everyone knows that everyone knows. Without end.</p>
+    </div>
+
+    <p class="stage">(A beat.)</p>
+
+    <div class="speech">
+      <div class="speaker">The Young Student</div>
+      <p class="line">And I take it that is when a dictator is truly in command? Not when they believe. Not when they believe others believe. But when it is — how do you call it again?</p>
+    </div>
+
+    <div class="speech">
+      <div class="speaker">The Swedish Professor</div>
+      <p class="line">Common knowledge.</p>
+    </div>
+
+    <div class="speech">
+      <div class="speaker">The Young Student</div>
+      <p class="line">When it is common knowledge that everybody will comply. No more enforcement necessary. The system runs on itself.</p>
+    </div>
+
+    <div class="speech">
+      <div class="speaker">The Swedish Professor</div>
+      <p class="line">Well put, young man.</p>
+    </div>
+
+    <div class="speech">
+      <div class="speaker">The Young Student</div>
+      <p class="line">Beautiful phrase by the way. I will remember it.</p>
+    </div>
+
+    <p class="stage">(The New Student looks at the First Student.)</p>
+
+    <p class="stage">(The First Student looks at the Young Student.)</p>
+
+    <footer>
+      <a href="https://steffenhuck.github.io/">steffen huck</a>
+    </footer>
+
+  </div>
+</body>
+</html>
